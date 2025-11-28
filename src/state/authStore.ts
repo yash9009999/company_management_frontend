@@ -20,7 +20,7 @@ interface AuthState {
 }
 
 axios.defaults.withCredentials = true;
-axios.defaults.baseURL = import.meta.env.VITE_API_URL || 'http://98.81.19.126';
+axios.defaults.baseURL = import.meta.env.VITE_API_URL || 'http://localhost:4000';
 
 export const useAuthStore = create<AuthState>((set) => ({
   user: null,
